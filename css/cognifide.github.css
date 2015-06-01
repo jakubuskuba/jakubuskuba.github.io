@@ -25,14 +25,28 @@
     height: 380px;
     position: relative;
     overflow: hidden;
+    margin-top: 70px;
 }
 
 .field-promo > h1 {
     color: white;
     margin: 0;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     text-shadow: 0 1px 0 black;
     transform: translate(-50%, -50%);
+}
+
+.field-promo > span {
+    font-family: ProximaNova-Semibold, arial, helvetica, sans-serif;
+}
+
+.social {
+    color:#edebeb;
+    margin: 10px;
+}
+
+.cog-green {
+    color: #a0ce4e;
 }
