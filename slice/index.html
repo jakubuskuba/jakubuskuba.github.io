@@ -59,7 +59,7 @@
     <hr>
     <h3>What can you gain?</h3>
 
-    <div style="font-size:  1.6rem; color: #747474; padding: 5px;">
+    <div class="container-content">
         <i class="fa fa-check-circle cog-green" style="margin: 10px;"></i>
         Lean and neat code, slicker design!<br>
         <i class="fa fa-check-circle cog-green" style="margin: 10px;"></i>
@@ -74,6 +74,76 @@
         <i class="fa fa-check-circle cog-green" style="margin: 10px;"></i>
         Overall costs reduced!<br>
     </div>
+
+    <h3>Features</h3>
+    <hr>
+
+    <h4>Separation of concerns</h4>
+
+    <div style="background-color: #f6f6f6; border-left: 3px solid #a0ce4e">
+        <div style="margin-left: 15px; font-size:  1.6rem; color: #747474; padding: 15px;">
+            No more business logic in your view (JSP, Sightly scripts) - business logic's place is in Java classes and Slice
+            knows it!
+        </div>
+    </div>
+
+    <!--<div class="container-content" style="margin-bottom: 5px; margin-top: 20px;">-->
+        <!--No more business logic in your view (JSP, Sightly scripts) - business logic's place is in Java classes and Slice-->
+        <!--knows it!<br>-->
+    <!--</div>-->
+    <div class="container-content" style="margin-bottom: 5px; margin-top: 20px;">
+        <b>Slice loves Sightly. Sightly loves Slice.</b> Both are perfect match. Seamless integration you will love:
+    </div>
+
+    <!-- HTML generated using hilite.me -->
+    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+        <pre
+                style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;div</span> <span
+                style="color: #0000CC">data-sly-use.model=</span><span style="background-color: #fff0f0">&quot;com.example.components.text.TextModel&quot;</span><span
+                style="color: #007700">&gt;</span>
+                <span style="color: #007700">&lt;p&gt;</span>${model.text}<span style="color: #007700">&lt;p&gt;</span>
+                <span style="color: #007700">&lt;/div&gt;</span>
+        </pre>
+    </div>
+
+    <div class="container-content" style="margin-bottom: 5px; margin-top: 20px;">
+        <b>JSPs made clean and tidy</b> - no more these ugly scriptlets.
+    </div>
+
+    <!-- HTML generated using hilite.me -->
+    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;slice:lookup</span> <span
+                style="color: #0000CC">var=</span><span style="background-color: #fff0f0">&quot;model&quot;</span> <span
+                style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;</span><span
+                style="color: #008800; font-weight: bold">&lt;%=</span>com<span style="color: #333333">.</span><span
+                style="color: #0000CC">example</span><span style="color: #333333">.</span><span style="color: #0000CC">components</span><span
+                style="color: #333333">.</span><span style="color: #0000CC">text</span><span
+                style="color: #333333">.</span><span style="color: #0000CC">TextModel</span><span
+                style="color: #008800; font-weight: bold">%&gt;</span><span
+                style="background-color: #fff0f0">&quot;</span> <span style="color: #007700">/&gt;</span>
+            <span style="color: #007700">&lt;p&gt;</span>${model.text}<span style="color: #007700">&lt;/p&gt;</span>
+        </pre>
+    </div>
+
+    <div class="container-content" style="margin-bottom: 5px; margin-top: 20px;">
+        <b>Reusable Java models</b> which expose data for your view - note same model can be used for Sightly and JSP
+        components - one model to feed them all!
+    </div>
+
+    <!-- HTML generated using hilite.me -->
+    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #555555; font-weight: bold">@SliceResource</span>
+<span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">TextModel</span> <span style="color: #333333">{</span>
+
+    <span style="color: #555555; font-weight: bold">@JcrProperty</span>
+    <span style="color: #008800; font-weight: bold">private</span> String text<span style="color: #333333">;</span>
+
+    <span style="color: #008800; font-weight: bold">public</span> String <span style="color: #0066BB; font-weight: bold">getText</span><span style="color: #333333">()</span> <span style="color: #333333">{</span>
+        <span style="color: #008800; font-weight: bold">return</span> text<span style="color: #333333">;</span>
+    <span style="color: #333333">}</span>
+<span style="color: #333333">}</span>
+</pre></div>
+
+
 
 </div>
 
